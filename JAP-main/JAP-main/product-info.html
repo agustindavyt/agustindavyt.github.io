@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/product-info.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="nav-container"></div>
+  <main>
+    <div class="product-info-container">
+      <div class="info-producto">
+        <div class="title">
+          <h4></h4>
+        </div>
+        <div class="precio-vendidos">
+          <span class="vendidos"></span>
+          <span class="precio"></span>
+        </div>
+      </div>
+      <div class="descripcion">
+        <p class="descripcion-titulo">Descripción</p>
+        <p class="descripción-info"></p>
+      </div>
+      <div class="content-galery mt-4">
+        <p class="galeria">Galería</p>
+        <div class="galeria-imagenes">
+        </div>
+      </div>
+
+      <div class="content-comments">
+        <div class="product-reviews text-white">
+            <p class="fw-bold fs-4">Opiniones del producto</p>
+            <div class="text-white rounded" id="average-note">
+            </div>
+        </div>
+        <div class="featured-reviews">
+            <p class="text-white fw-semibold fs-5">Opciones Destacadas</p>
+            <div class="comments-wrapper"></div>
+         </div>
+      </div>
+
+      <div class="descripcion">
+        <p class="descripcion-titulo">Deja tu comentario</p>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <textarea name="productDescription" class="form-control text-white" id="productDescription" rows="2"
+              placeholder="Comparte tu opinion y experiencia sobre este producto.."></textarea>
+            <div class="row align-items-center">
+              <div class="row align-items-center">
+              <div class="col-auto">
+                <p class="descripcion-titulo mt-2 mb-0">Calificación</p>
+              </div>
+              <div class="col-auto">
+                <div class="stars" id="starRating">
+                  <span class="star" data-value="1">★</span>
+                  <span class="star" data-value="2">★</span>
+                  <span class="star" data-value="3">★</span>
+                  <span class="star" data-value="4">★</span>
+                  <span class="star" data-value="5">★</span>
+                </div>
+              </div>
+                <div class="col-auto ms-auto btn-group">
+                  <button class="btn btn-light btn-group btn-lg w-100 mt-2" id="rangeFilterCount">Enviar</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-related-products">
+        <div class="title-related-products">Productos relacionados</div>
+        <div class="products-wrapper">
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-end">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a>
+      </p>
+    </div>
+  </footer>
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/product-info.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+
+</html>

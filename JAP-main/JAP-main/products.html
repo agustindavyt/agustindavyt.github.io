@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/products.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="nav-container"></div>
+  <main class="pb-5 container">
+    <div id="productos-lista">
+      <div id="header">
+        <h1 id="titulo"></h1>
+        <div class="filtros">
+          <h4 class="filtroTitulo">Ordenar por</h4>
+          <select name="miCombobox" id="miCombobox">
+            <option value="desc">Menor precio</option>
+            <option value="asc">Mayor precio</option>
+            <option value="sell">Más vendidos</option>
+          </select>
+        </div>
+        <div class="content-filter">
+          <input class="form-control" type="number" placeholder="min" id="minPrice">
+          <input class="form-control" type="number" placeholder="máx" id="maxPrice">
+
+          <div class="content-search">
+            <div class="position-relative">
+              <input class="search-filter form-control ps-5" type="search" placeholder="Search" id="search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"
+                  viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 
+                        1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242.656a5 
+                        5 0 1 1 0-10 5 5 0 0 1 0 10z"/>
+              </svg>
+            </div>
+            <div class="btn-group" role="group">
+              <button class="btn btn-light btn-block" id="btnFilter">Filtrar</button>
+              <button class="btn btn-link btn-sm" id="btnClear">Limpiar</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div id="list"></div>
+    </div>
+  </main>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-end">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a>
+      </p>
+    </div>
+  </footer>
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+
+</html>
